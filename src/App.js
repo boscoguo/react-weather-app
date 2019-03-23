@@ -22,7 +22,7 @@ class App extends Component {
 
     try {
       const { data } = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
       )
 
       const { main, sys, weather, name } = data
